@@ -23,12 +23,17 @@
         </script>
 
         <style type="text/css">
-        .reveal .slide-background {
+        .reveal .slide-background.slide1 {
+            background: #164A62;
+        }
+        .reveal .slide-background.slide2 {
             background-image: linear-gradient(to bottom right, #164A62, #7B266C);
         }
-
-        .reveal .slide-background.clean {
-            background: #164A62;
+        .reveal .slide-background.slide3 {
+            background: #C53494;
+        }
+        .reveal .slide-background.slide4 {
+            background-image: linear-gradient(to bottom right, #7B266C, #164A62);
         }
 
         .reveal::after {
@@ -54,30 +59,30 @@
 	<body>        
 		<div class="reveal">            
 			<div class="slides">
-				<section class="clean">
+				<section class="slide1">
                     <h1>Domain Driven Design</h1>
                 </section>
 
-                <section>
+                <section class="slide2">
                     <img src="images/dns-joke.jpg" style="width: 300px;" />
                 </section>
 
-                <section>
+                <section class="slide3">
                     <h1>What is it?</h1>
                     <quote>Domain-Driven Design shifts focus from <br /><em>technical expertise</em> to <em>business expertise</em>.</quote>
                 </section>
 
-                <section>
+                <section class="slide4">
                     <h1>Language</h1>
                     <img src="images/ddd-jargon.png" style="border: 0; width: 600px;" />
                 </section>
 
-                <section>
+                <section class="slide1">
                     <h1>Separation of Concerns</h1>
                     <quote>Focus on a domain, rather than<br/>implementation details.</quote>                    
                 </section>
 
-                <section>
+                <section class="slide2">
                     <h2>Doesn't focus on</h2>
                     <ul>
                         <li class="fragment">What database to use</li>
@@ -87,7 +92,7 @@
                     </ul>
                 </section>
 
-                <section>
+                <section class="slide3">
                     <h2>Does focus on</h2>
                     <ul>
                         <li class="fragment">Engaging with domain experts</li>
@@ -96,17 +101,20 @@
                     </ul>
                 </section>
                 
-                <section>
+                <section class="slide4">
                     <h2>Bounded Contexts</h2>
                     <em>Bounded context is a logical boundary</em>
                     <div style="margin-top: 1em">Bounded context tries to define boundaries of our complex domain into business context.</div>
                 </section>
 
-                <section>
+                <section class="slide1">
                     <img src="images/bounded-context1.jpeg" style="width:700px" />
                 </section>
+                <section class="slide2">
+                    <img src="images/bounded-context2.png" style="width:700px" />
+                </section>
                 
-                <section>
+                <section class="slide3">
                     <h1>Pros</h1>
                     <ul>
                         <li class="fragment">Flexible</li>
@@ -116,7 +124,7 @@
                     </ul>
                 </section>
 
-                <section>
+                <section class="slide4">
                     <h1>Cons</h1>
                     <ul>
                         <li class="fragment">Doesn't work well when<br/>technical complexity > business complexity</li>
@@ -126,7 +134,7 @@
                     </ul>
                 </section>
 
-                <section>
+                <section class="slide1">
                     <h2>Links</h2>
                     <ul>
                         <li><a href="https://martinfowler.com/bliki/BoundedContext.html">https://martinfowler.com/bliki/BoundedContext.html</a></li>
